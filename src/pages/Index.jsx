@@ -1,4 +1,4 @@
-import { Container, Text, VStack, Heading, Box, Button, Image, Flex } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, Button, Image, Flex, Divider } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Index = () => {
@@ -23,6 +23,10 @@ const Index = () => {
           </Button>
         </Flex>
       </VStack>
+      <Divider mt={8} />
+      <Box as="footer" width="100%" py={4} textAlign="center" borderTop="1px" borderColor="gray.200">
+        <Text fontSize="sm">© {new Date().getFullYear()} Your Name. All rights reserved.</Text>
+      </Box>
     </Container>
   );
 };
